@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/banglore4.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling due to large background image */
+}
+
+.container {
+    background-color: #ffffff; /* Solid white background */
+    opacity: 0.75; /* Adjust opacity for better readability */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better contrast */
+    max-width: 450px;
+    width: 80%;
+}
+
+.container h1 {
+    font-size: 28px; /* Reduced size for better balance */
+    color: #003366; /* Deep blue color */
+    text-decoration: underline; /* Add underline */
+    margin-bottom: 20px; /* Increased margin for spacing */
+}
+
+/* Form Styles */
+form {
+    display: grid;
+    gap: 13px; /* Increased gap for better spacing */
+}
+
+/* Grouping Styles */
+.group {
+    display: flex;
+    justify-content: space-between; /* Space out items evenly */
+    gap: 15px; /* Increased gap for better spacing */
+}
+
+.group > div {
+    flex: 1; /* Allow children to grow and fill the space */
+}
+
+/* Label and Input Styles */
+label {
+    font-weight: bold;
+    display: block; /* Ensure label is on a new line */
+    margin-bottom: 8px; /* Increased space between label and input/select */
+}
+
+input, select {
+    width: 100%; /* Make input/select full width of container */
+    padding: 12px; /* Added padding for better usability */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 24px; /* Adjusted padding for a more prominent button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #5bc474; /* Solid background color */
+    color: #ffffff; /* Changed text color to white for better contrast */
+    font-size: 18px; /* Reduced font size for better balance */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for button effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly scale up button on hover */
+}
+
+.form-buttons {
+    position: absolute; /* Absolute positioning within the form */
+    bottom: 10px; /* Distance from the bottom of the form */
+    left: 0; /* Align to the left */
+    margin-top: 20px; /* Space above the button */
+}
+
+.form-buttons button {
+    padding: 10px 20px; /* Medium size padding */
+    font-size: 16px; /* Medium font size */
+    background-color: #dc3545; /* Red background color for contrast */
+    color: #ffffff; /* White text color */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+.form-buttons button:hover {
+    background-color: #c82333; /* Darker red background on hover */
+    transform: scale(1.05); /* Slightly scale up button on hover */
+}
+
+
+/* Result Section */
+#result {
+    margin-top: 20px;
+    font-size: 20px; /* Increased font size for better visibility */
+    font-weight: bold; /* Added bold weight for emphasis */
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px; /* Adjust font size as needed */
+    color: #e48509; /* Match the color of the heading for consistency */
+    text-align: right; /* Center-align the text */
+    text-decoration: underline; /* Underline the text */
+}
